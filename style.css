@@ -1,0 +1,111 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+header{
+    width: 100wh; height: 100vh;
+    background-image:radial-gradient(rgba(12, 194, 145,0.2),rgba(151, 211, 33, 0.3)), url('ghat2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;height: 15vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display:flex;
+    justify-content: space-between ;
+    align-items: center; text-transform: uppercase;
+}
+nav .logo{
+    width: 25%; text-align: center;
+    animation: infinite ;
+
+}
+nav .menu{
+    width:40%;display: flex;
+    justify-content: space-around;
+    
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(12, 126, 97);
+    font-size: 18px;
+}
+nav .menu a:first-child{
+    color: chocolate;
+}
+main{
+    width:100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black;
+}
+section h3{
+    font-size: 65px;font-weight: 200; letter-spacing: 2px;
+    text-shadow: 1px 1px 4px black;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size:100px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    text-shadow: 1px 1px 0.5px black;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+section a{
+    
+ padding: 12px 40px;
+ border-radius: 4px;
+ outline: none;
+ text-transform: uppercase;
+ font-size: 13px;   
+ font-weight: 500;
+ text-decoration: none;
+ letter-spacing: 1px;
+ transition: all 0.5s ease;
+}
+.btone{
+background:white;
+color: black;
+border-radius: 15px
+}
+.btone:hover{
+    background:rgb(12, 126, 97);
+    color: white;
+}
+.bttwo{
+    background:rgb(12, 126, 97);
+    color: white;
+    border-radius: 15px
+}
+.bttwo:hover{
+    background:white;
+color: black;
+}
+.change_content:after{
+    content: '';
+    animation: changetext 5s infinite linear;
+    color:white;
+    text-transform: uppercase;
+}
+@keyframes changetext{
+    0%{content: "Darjeeling";}
+    20%{content: "Agra";}
+    40%{content: "Amritsar";}
+    60%{content: "Mumbai";}
+    80%{content: "Mysore";}
+    100%{content: "Kolkata";}
+    
+}
